@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background: #E3E3D9;
+    margin: 0;
+    font-family: 'Poller One', sans-serif;
+}
+
+header{
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+    border-bottom: 2px solid black;
+}
+
+.back{
+    font-family: Inter;
+    padding-bottom: 1.5vw;
+    padding-left: 2vw;
+}
+.back :hover{
+    color: rgb(120, 118, 118);
+    cursor: pointer;
+}
+
+.title{
+    font-family: "Red Rose";
+    color: #BB3A34;
+    padding-left: 6vw;
+    font-size: 24px;
+}
+
+/* -------- main ----------- */
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 1px;
+    }
+.textabout{
+        font-family: "Red Rose";
+        font-size: 18px;
+        text-align: justify;
+        justify-self: center;
+        align-self: center;
+        margin: 17%;
+    }
+
+/* -----img------ */
+    .aboutimg {
+            width: 200px; /* Adjust this width according to your design */
+            /* margin: 0 auto; Center the image container horizontally */
+            justify-self: flex-start;
+            align-self: flex-end;
+            margin-top: 85%;
+            border: 2px solid black;
+        }
+        
+    .image-container img {
+            max-width: 100%; /* Make sure the image stays responsive */
+            height: auto;
+            display:block;
+
+    }
+
+    .aboutimg2 {
+        width: 200px; /* Adjust this width according to your design */
+        /* margin: 0 auto; Center the image container horizontally */
+        justify-self: flex-end;
+        align-self: flex-start;
+        border: 2px solid black;
+    }
+
+    .image-container2 img {
+        max-width: 100%; /* Make sure the image stays responsive */
+        height: auto;
+        display:block;
+    }
+    .image-container3 img {
+
+        display: none;
+    }
+    .image-container4 img {
+
+        display: none;
+    }
+
+
+
+/* -------- responsive ----------- */
+
+@media only screen and (max-width: 900px) {
+
+    /* ---header---- */
+    .title{
+        font-size: 22px;
+    }
+    /* ---header---- */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 1px;
+        }
+    .textabout{
+        font-size: 12px;
+
+    }
+    .aboutimg{
+        width: 80px;
+        border: 1px solid black;
+        align-self: flex-end;
+    }
+    .aboutimg2{
+        width: 80px;
+        border: 1px solid black;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .title{
+        font-size: 16px;
+    }
+
+    /* ---header---- */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 1px;
+        }
+
+    .textabout{
+        margin-top: 65px;
+        font-size: 8px;
+        
+    }
+    .aboutimg{
+        width: 50px;
+        border: 0.5px solid black;
+    }
+    .aboutimg2{
+        width: 50px;
+        border: 0.5px solid black;
+    }
+    .image-container3 img {
+        max-width: 100%; /* Make sure the image stays responsive */
+        height: auto;
+        display: grid;
+    }
+    .image-container4 img {
+        max-width: 100%; /* Make sure the image stays responsive */
+        height: auto;
+        display: grid;
+    }
+  }

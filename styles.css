@@ -1,0 +1,155 @@
+/* html {
+    scroll-behavior: smooth;
+    cursor:url(assets/dot.png),auto;
+   } */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background: #E3E3D9;
+    margin: 0;
+    font-family: 'Poller One', sans-serif;
+}
+
+header{
+    margin-top: 3%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutme { 
+    font-family: "Red Rose" ;
+    font-weight: 200;
+    font-size: 16px;    
+} 
+.aboutme :hover{
+    color: rgb(120, 118, 118);
+    cursor: pointer;
+}
+.title { 
+    font-family: Poller One;
+    font-size: 48px;
+    color: #BB3A34;
+    margin: 10px;
+} 
+
+.outcomes { 
+    font-family: "Red Rose";
+    font-weight: 200;
+    font-size: 16px; 
+    margin-bottom: 3%;  
+} 
+
+.outcomes :hover{
+    color: rgb(120, 118, 118);
+    cursor: pointer;
+}
+
+.homeimg {
+    width: 400px; /* Adjust this width according to your design */
+    margin: 0 auto; /* Center the image container horizontally */
+}
+
+.image-container img {
+    border: 2px solid black;
+    max-width: 100%; /* Make sure the image stays responsive */
+    height: auto;
+
+}
+
+/* --------- footer ------------- */
+footer{ 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; 
+    justify-content: center;
+    margin: 0 37%;
+    font-family: Alata;
+    font-size: 16px;  
+    margin-top: 24px;
+}
+.phone { 
+    grid-area: 1 / 1 / 2 / 2; 
+    justify-self: flex-start;} 
+
+.mail { 
+    grid-area: 2 / 1 / 3 / 2; } 
+
+.socials { 
+    grid-area: 3 / 1 / 4 / 2;
+    color:#BB3A34; } 
+
+.click1 { 
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: flex-end;
+    color:#BB3A34;
+    
+ } 
+
+.click2 { 
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: flex-end;
+    color: #BB3A34; } 
+
+.click3 { 
+    grid-area: 3 / 2 / 4 / 3;
+    justify-self: flex-end;
+    color: black;
+ } 
+.click2 a, .click1 a{
+    color:#BB3A34
+  }
+.click3 a{
+    color: black
+}
+ 
+
+
+
+ /* -------- responsive ----------- */
+
+ @media only screen and (max-width: 900px) {
+
+    /* ---header---- */
+    .aboutme, .outcomes {
+        font-size: 12px;
+    }
+
+    .title{
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    /* -----footer---- */
+
+    footer{
+        font-size: 16px;
+        grid-row-gap: 10px; 
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .aboutme, .outcomes {
+        font-size: 8px;
+    }
+
+    .title{
+        font-size: 16px;
+        margin: 5px;
+    }
+    /* -----footer---- */
+
+    footer{
+        font-size: 12px;
+        grid-row-gap: 6px; 
+    }
+
+  }

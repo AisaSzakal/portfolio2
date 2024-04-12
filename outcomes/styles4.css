@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background: #E3E3D9;
+    margin: 0;
+    font-family: 'Poller One', sans-serif;
+}
+
+/* --------header-------------- */
+header{
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+    border-bottom: 2px solid black;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.back{
+    font-family: Inter;
+    padding-bottom: 1.5vw;
+    padding-left: 2vw;
+}
+.back :hover{
+    color: rgb(120, 118, 118);
+    cursor: pointer;
+}
+.home{
+    padding-top: -15px;
+    padding-right: 2vw;
+    font-family: Inter;
+    padding-bottom: 1.5vw;
+    padding-left: 2vw;
+}
+.home :hover{
+    color: rgb(120, 118, 118);
+    cursor: pointer;
+}
+
+.title{
+    font-family: "Red Rose";
+    color: #BB3A34;
+    padding-left: 6vw;
+    font-size: 24px;
+}
+
+/* --------main-------------- */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    }
+
+.text {
+    font-family: 'Red Rose';
+    font-size: 18px;
+    padding-top: 2vw;
+    padding-left: 5vw;
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.small-title{
+    color: #BB3A34;
+}
+
+.download-button{
+    color: #BB3A34;
+    font-weight: 700;
+}
+
+.block1 {
+    padding-top: 2vw;
+    grid-area: 1 / 5 / 2 / 6;
+    padding-right: 5vw;
+    align-self: flex-start;
+}
+
+.block2 {
+    grid-area: 1 / 3 / 3 / 6;
+    justify-self: center;
+    align-self: center;
+    padding-top: 18vw;
+ }
+
+.block3 {
+    grid-area: 2 / 5 / 4 / 5;
+    align-self: center;
+    justify-self: flex-end;
+    padding-right: 4vw;
+ }
+
+
+ @media only screen and (max-width: 600px) {
+    .title{
+        font-size: 16px;
+    }
+    .text{
+        font-size: 12px;
+        padding-top: 2vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        grid-area: 1 / 1 / 4 / 6;
+        align-self: center;
+    }
+    .block1, .block2, .block3{
+        display: none;
+    }
+  }
