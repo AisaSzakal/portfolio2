@@ -28,7 +28,7 @@ header{
 }
 
 .title{
-    font-family: "Red Rose";
+    font-family: "Tropikal";
     color: #BB3A34;
     padding-left: 6vw;
     font-size: 24px;
@@ -43,7 +43,7 @@ main {
     grid-row-gap: 1px;
     }
 .textabout{
-        font-family: "Red Rose";
+        font-family: "Tropikal";
         font-size: 18px;
         text-align: justify;
         justify-self: center;
