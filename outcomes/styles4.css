@@ -100,7 +100,8 @@ main {
 .media .block2,
 .media .video3,
 .media .video3,
-.media .video4 {
+.media .video4 
+.media .video5 {
     width: 100%;
 }
 .block1 {
@@ -117,38 +118,22 @@ main {
 .block3, .video4 {
     grid-area:4 / 1 / 5 / 2;
 }
+.video5 {
+    grid-area:5 / 1 / 6 / 2;
+}
+.media img, .media iframe {
+    width: 100%;
+    height: auto;
+}
 .media img, .media iframe {
     width: 100%;
     height: auto;
 }
 
-/* .block1 {
-    padding-top: 2vw;
-    grid-area: 1 / 5 / 2 / 6;
-    /* padding-right: 5vw; */
-    /* align-self: flex-start;
+/* Adding hover effect to images */
+.media img:hover {
+    filter: grayscale(50%) sepia(30%) saturate(280%) hue-rotate(-55deg);
 }
-
-.block2 {
-    grid-area: 1 / 3 / 2 / 6;
-    justify-self: center;
-    align-self: center;
-    padding-top: 18vw;
- }
-
-.block3, .video3 {
-    grid-area: 2 / 5 / 3 / 5;
-    align-self: center;
-    justify-self: flex-end;
-    padding-right: 4vw;
- }
-
-.video4{
-    grid-area: 3 / 5 / 3 / 5;
-    align-self: center;
-    justify-self: flex-end;
-    padding-right: 14vw;
-} */ 
 
 
 /* -------------------responsive------------------ */
